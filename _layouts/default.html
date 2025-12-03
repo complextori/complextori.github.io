@@ -2,6 +2,15 @@
 <html>
 <head>
     <title>{{ page.title }} | {{ site.title }}</title>
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+    </script>
+
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <style>
         body { max-width: 700px; margin: 40px auto; padding: 0 20px; font-family: Georgia, serif; line-height: 1.6; }
